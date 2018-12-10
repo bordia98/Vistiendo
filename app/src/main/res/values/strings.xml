@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">vistiendo</string>
+    <string name="title_activity_main_">Main_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="cities">
+        <item>Banswara</item>
+        <item>Bikaner</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Rajasthan</item>
+    </string-array>
+
+</resources>

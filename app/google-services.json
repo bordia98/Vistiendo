@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "792771210969",
+    "firebase_url": "https://vistiendo-deecb.firebaseio.com",
+    "project_id": "vistiendo-deecb",
+    "storage_bucket": "vistiendo-deecb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792771210969:android:9ec997d1c856edba",
+        "android_client_info": {
+          "package_name": "com.example.vistiendo.vistiendo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792771210969-2d9mi06mjpfpjm2h2htq1uhlkadau9ja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vistiendo.vistiendo",
+            "certificate_hash": "d513e0f82ea78b381ebdd0c2b11017181cf18c17"
+          }
+        },
+        {
+          "client_id": "792771210969-dr7o99p02n8dostmj9l49f1rua5q9178.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB-c21Jn4WqbP-Rzbww4QDnkV9cUZ7fCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792771210969-dr7o99p02n8dostmj9l49f1rua5q9178.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
