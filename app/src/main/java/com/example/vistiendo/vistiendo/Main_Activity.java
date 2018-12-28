@@ -3,9 +3,7 @@ package com.example.vistiendo.vistiendo;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
+import android.support.v4.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,14 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Main_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Main_Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, Product_Upload.Upload_Click_Listner {
 
     private FirebaseAuth mauth;
 
@@ -61,6 +58,7 @@ public class Main_Activity extends AppCompatActivity implements NavigationView.O
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.home);
     }
 
     @Override
@@ -114,6 +112,12 @@ public class Main_Activity extends AppCompatActivity implements NavigationView.O
 
         if (id == R.id.home) {
             // Handle the camera action
+        }
+        else if(id == R.id.Add_Product){
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            Product_Upload fragment = new Product_Upload();
+            ft.replace(R.id.mainFrame,fragment);
+            ft.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

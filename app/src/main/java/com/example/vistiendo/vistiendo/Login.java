@@ -45,6 +45,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
         onStart();
+
         setContentView(R.layout.login);
         Toolbar bar = findViewById(R.id.toolbar);
         bar.setTitleTextColor(Color.WHITE);
