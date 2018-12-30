@@ -81,7 +81,6 @@ public class Personal_Info extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 pd.hide();
                 if (dataSnapshot.exists()){
-                    pd.hide();
                     for ( DataSnapshot snapshot : dataSnapshot.getChildren()){
                         childid = snapshot.getKey();
                         fname.setText(snapshot.child("fname").getValue().toString());
@@ -106,9 +105,6 @@ public class Personal_Info extends AppCompatActivity {
                 pd.hide();
             }
         });
-
-
-
 
 
         pgbar=(ProgressBar)findViewById(R.id.progressBar);

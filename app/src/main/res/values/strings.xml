@@ -17,6 +17,22 @@
         <item>Rajasthan</item>
     </string-array>
 
+    <string-array name="types">
+        <item> T-Shirts </item>
+        <item> Shirts   </item>
+        <item> Jeans    </item>
+        <item> Sarees   </item>
+        <item> Suits    </item>
+    </string-array>
+
+    <string-array name="genders">
+        <item> Men     </item>
+        <item> Women   </item>
+        <item> Boy     </item>
+        <item> Girl    </item>
+        <item> Unisex  </item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
